@@ -35,6 +35,7 @@ io.on("connection", (socket) => {
 
   setInterval(() => {
     let number = Math.random();
+    console.log ("number: " + number)
     socket.volatile.emit("random", number);
   }, 3000);
 

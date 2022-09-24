@@ -10,5 +10,4 @@ def list_view(request):
     return render(request, "main/home.html",  {'actors': actors})
 
 def client(request):
-    actors = [{""}]
-    return render(request, "main/join.html", )
+    return render(request, "main/join.html" )
